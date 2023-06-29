@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="main-container-events">
+        <div class="container mobile-event-container-info">
+            <div class="d-flex">
+                <div class="parent-event-container">
+                    <div class="">
+                        <div class="mobile-map">
+                            <div class="">
+                                <div class="">
+                                        <div class="row mx-0 mt-3">
+                                        <div class="mobile-parking col-12 col-sm-12 col-md-11 col-lg-8 mx-auto <?php echo $recomendado ?> <?php echo $e->plazas_libres > 0 ? '' : 'no-disponible' ?>" data-metros='<?php echo $e->distancia_recorrido_m ?>' data-valor='<?php echo $menor_valor_number ?>' data-id='<?php echo $e->id ?>'>
+                                            <h5 class=" mb0  title-parking-mobile col-12 mt-2 pb-2 ">           
+                                            Aguirre 265,<span class='subdireccion'> Buenos Aires</span>          
+                                            </h5>
+                                        
+                                            <div class="row ">
+                                                <div class="col-12 col-sm-6  " id="col-6Info" >
+                                                    <span class="info col-12 info-distancia  ">
+                                                    A 100 Mts del evento
+                                                    </span>
+                                                <div class="row align-items-end">
+                                                            <div class="col-12 align-self-end font-black" id="plazas-disponibles">
+                                                                
+                                                        <span class="font-black pb-2  " id="info-adicional" >
+                                                        En este estacionamiento tenés que dejar las llaves.
+                                                        </span>
+
+                                                            <span class="text-nowrap plazas-libres col-12 lugares-disponibles-sm">
+                                                                Quedan sólo 10 lugares
+                                                            </span>
+                                                        </div>
+
+                                                </div>
+
+                                                </div>
+                                                <div class="col-12 col-sm-6 right-info  align-items-between right-information">
+                                                    <div class="col-12 pt-0 pb-2 text-normal font-black">Vehículos admitidos:</div>
+                                                    <div class="col-12  pb-2">
+                                                        <div class="row ps-1 justify-content-center text-center justify-content-evenly " id="vehiculos-disponibles">
+                                                        
+                                                                <div class="col-2 p-0" id="col-iconos-vehiculos">
+                                                                    <img  src="img/img/auto.svg" id="icono-mobile" class=" icon ">
+                                                                </div>
+                                                                <div class="col-2 p-0" id="col-iconos-vehiculos">
+                                                                    <img  src="img/img/camioneta.svg" id="icono-mobile" class=" icon ">
+                                                                </div>
+                                                                <div class="col-2 p-0" id="col-iconos-vehiculos">
+                                                                    <img  src="img/img/suv.svg" id="icono-mobile" class=" icon ">
+                                                                </div>
+                                                                <div class="col-2 p-0" id="col-iconos-vehiculos">
+                                                                    <img  src="img/img/moto.svg" id="icono-mobile" class=" icon ">
+                                                                </div>
+                                                                <div class="col-2 p-0" id="col-iconos-vehiculos">
+                                                                    <img  src="./img/img/bicicleta.svg" id="icono-mobile" class=" icon ">
+                                                                </div>                          
+                                                        </div>                                           
+                                                    </div>
+                                                    <div class="col-12 py-2  button-parking text-center ">
+                                                        <form action='<?php echo $link_action ?>' method='post' >
+                                                            <input type='hidden' name='id_estacionamiento' value='$e->id'>
+                                                            <input type='hidden' name='id_evento' value='$e->id_evento'>
+
+                                                                <a class='estaciona_aca  text-nowrap' href='javascript:void(0)'><span class='px-4'>Estacioná desde</span><span class='px-4'>3000</span></a>
+
+                                                        </form>
+                                                    
+                                                    </div>
+
+                                                </div>
+                                                <span class="text-nowrap plazas-libres col-12 pt-2 bolder d-sm-none">
+                                                    Quedan sólo 10 lugares
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+</div>
+
+
+</body>
+</html>
